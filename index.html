@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+    <div id="button">Shell execution</div>
+    <div id="response"></div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $.get('http://localhost:3000/run', function(result_shell) {
+            $('#response').html(result_shell); 
+        });
+    });
+    </script>
+    </body>
+</html>
